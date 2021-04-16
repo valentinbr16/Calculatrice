@@ -5,7 +5,7 @@ let screen = document.querySelector("#screen");
 
 // calculatrice.addEventListener.
 
-function TapOnButton(event) {
+function tapOnButton(event) {
     if(event.target.nodeName === "BUTTON") {
         if(event.target.innerHTML === "=") {
             screen.textContent = eval(screen.textContent);
@@ -19,13 +19,10 @@ function TapOnButton(event) {
         else if(event.target.innerHTML === "÷") {
             screen.textContent += "/";
         }
-        // else if(event.target.innerHTML !== "button") {
-        //     screen.textContent += "";
-        // }
         else {
         screen.textContent += event.target.textContent;
         }
     }
 }
 
-calculatrice.addEventListener("click", TapOnButton);
+calculatrice.addEventListener("click", tapOnButton);
