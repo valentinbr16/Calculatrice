@@ -1,6 +1,7 @@
 .calcul {
     border: 1px solid darkgray;
     width: 400px;
+    margin: 30px auto;
 }
 
 .calcul__ecran {
@@ -10,6 +11,7 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: right;
     padding: 10px;
+    height: 120px;
 }
 
 .calcul__operators {
